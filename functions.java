@@ -1,12 +1,78 @@
+import java.util.Scanner;
+public class functions {
+public static boolean isPrime(int num){
+    if (num==2) {
+        return true;
+    }
+    for (int i=2;i<=Math.sqrt(num); i++){
+        if(num%i==0){
+            return false;}
+
+        }
+return true;}
+
+public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter your number");
+    int num = sc.nextInt();
+    System.out.println("Your number =" + num);
+    boolean ans= isPrime(num);
+    if (ans==true) {
+        System.out.println("Your number is prime");
+    }
+    else {
+        System.out.println("your number is not a prime number");
+    }
+    sc.close();
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*import java.util.Scanner;
 public class functions{
  public static int sum (int a, int b){
 int add= a+b;
 return add;
  }
-
-
-
 public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int num1= sc.nextInt();
@@ -20,7 +86,7 @@ public static void main(String[] args) {
 }*/
 
 //to find factorial and binomial coefficient using function
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class functions {
 public static int factorial(int a, int b, int c){
       int root= 1;
@@ -39,7 +105,6 @@ public static int factorial(int a, int b, int c){
 
       return root;
 }
-
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("factorial calculator");
@@ -52,4 +117,4 @@ public static int factorial(int a, int b, int c){
         System.out.println("your answer ="+ans);
         sc.close();
     }
-}
+}*/
