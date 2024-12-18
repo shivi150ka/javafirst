@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class functions {
 public static boolean isPrime(int num){
     if (num==2) {
@@ -25,9 +25,34 @@ public static void main(String[] args) {
     }
     sc.close();
 }
+}*/
+// conversion of binary to decimal
+import java.util.Scanner;
+public class functions {
+public static void conversion (int a) {
+    int n=a;
+    int pow=0;
+    int decnum =0;
+    while(n>0){
+  int lastdigit= n%10;
+         decnum = decnum+(lastdigit*(int)Math.pow(2,pow));
+         pow++;
+         n= n/10;
+
+    }
+    System.out.println("your answer is"+ decnum);
+
 }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Conversion of Binary to Decimal");
+        int num = sc.nextInt();
+        System.out.println("your number =" + num);
+         conversion(num);
+        sc.close();
 
-
+    }
+}
 
 
 
