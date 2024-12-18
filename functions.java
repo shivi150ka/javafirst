@@ -22,12 +22,21 @@ public static void main(String[] args) {
 //to find factorial and binomial coefficient using function
 import java.util.Scanner;
 public class functions {
-public static int factorial(int a){
+public static int factorial(int a, int b, int c){
       int root= 1;
       for(int i=1; i<=a;i++)
       {
         root= root*i;
       }
+      for(int i=1; i<=b;i++)
+      {
+        root= root*i;
+      }
+      for(int i=1; i<=c;i++)
+      {
+        root= root*i;
+      }
+
       return root;
 }
 
@@ -36,7 +45,10 @@ public static int factorial(int a){
         System.out.println("factorial calculator");
         int num = sc.nextInt();
         System.out.println("your number ="+ num);
-        int ans = factorial(num);
+        int r= sc.nextInt();
+        System.out.println("your r ="+r);
+         factorial(num,(num-r),r);
+        int ans= num/((num-r)*r);
         System.out.println("your answer ="+ans);
         sc.close();
     }
