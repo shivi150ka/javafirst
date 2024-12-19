@@ -25,7 +25,7 @@ public static void printarr(int arr[]){
     }
 }*/
 //Bubble Sort
-public class sorting {
+/*public class sorting {
     public static void bubblesort(int number[]){
         for(int i=0; i<number.length-1;i++)
         {
@@ -53,5 +53,36 @@ public class sorting {
         printarr(arr);
         
 
+    }
+}*/
+//SelectionSort
+public class sorting{
+    public static void selectionsort(int num[]){
+        for(int i=0; i<num.length-1;i++){
+            int minpos=0;
+            for(int j=i+1;j<num.length;j++){
+                if(num[j]>num[minpos]){
+                    minpos=j;
+                }
+            
+            int temp=num[minpos];
+            num[minpos]=num[j];
+            num[j]=temp;
+        }
+    }
+}
+
+    public static void printarr(int arr[]){
+        for(int i=0; i<arr.length;i++){
+            System.out.println(arr[i]+"");
+        }
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        int arr[]={1,5,3,4,8,7,2};
+        selectionsort(arr);
+        printarr(arr);
+        
+        
     }
 }
