@@ -18,7 +18,7 @@
     
         public static void main(String[] args) {
             bankaccount myaccount = new bankaccount();
-            myaccount.username = "Shradha Khapra";
+            myaccount.username = "Shara Khapra";
             myaccount.setpassword ("annu@123");
             System.out.println(myaccount.username);
         }    
