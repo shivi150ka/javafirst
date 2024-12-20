@@ -13,7 +13,7 @@
             tip=newtip;
         }
     }*/
-    //Access Modifiers
+    /*Access Modifiers
      public class OOPs {
     
         public static void main(String[] args) {
@@ -29,6 +29,34 @@
     public void setpassword(String pwd){
     password="pws";
     }   
+    }*/
+    public class OOPs {
+    
+        public static void main(String[] args) {
+            pen p1 = new pen();
+            p1.setcolor("Blue");
+            System.out.println(p1.getcolor());
+            p1.settip(9);
+            System.out.println(p1.gettip());
+            p1.setcolor("yellow");
+            System.out.println(p1.getcolor());  
+        }
     }
+    class pen {
+        private String color;
+        private int tip;
+        String getcolor(){
+            return this.color;}
+            int gettip(){
+                
+                return this.tip;
+            }
+            void setcolor (String newcolor){
+                this.color=newcolor;}
+                void settip(int tip){
+                    this.tip=tip;
+                }
+            }
+        
     
 
