@@ -13,7 +13,7 @@
             tip=newtip;
         }
     }*/
-    Access Modifiers
+    //Access Modifiers
      public class OOPs {
     
         public static void main(String[] args) {
