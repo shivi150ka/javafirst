@@ -13,8 +13,8 @@
             tip=newtip;
         }
     }*/
-    //Access Modifiers
-    public class OOPs {
+    Access Modifiers
+     public class OOPs {
     
         public static void main(String[] args) {
             bankaccount myaccount = new bankaccount();
