@@ -1,4 +1,4 @@
-public class OOPs {
+/*public class OOPs {
     public static void main(String[] args) {
         pen p1 = new pen ();
         p1.setcolor("Blue");
@@ -12,6 +12,23 @@ public class OOPs {
         void setip(int newtip){
             tip=newtip;
         }
+    }*/
+    //Access Modifiers
+    public class OOPs {
+    
+        public static void main(String[] args) {
+            bankaccount myaccount = new bankaccount();
+            myaccount.username = "Shradha Khapra";
+            myaccount.setpassword ("annu@123");
+            System.out.println(myaccount.username);
+        }    
+    }
+    class bankaccount  {
+    public String username;
+     String password;
+    public void setpassword(String pwd){
+    password="pws";
+    }   
     }
     
 
