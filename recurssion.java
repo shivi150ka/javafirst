@@ -34,9 +34,10 @@ if(num==1){
     System.out.println(1);
     return ;
 }
+System.out.println(num);
  printinc(num-1);
 
-System.out.println(num);
+
 
 }
     public static void main(String[] args) {
@@ -44,3 +45,4 @@ System.out.println(num);
     printinc(n);
     }
 }
+
