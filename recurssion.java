@@ -28,7 +28,7 @@ public static int fact(int num){
         System.out.println(fact(n));
     }
 }*/
-public class recurssion {
+/*public class recurssion {
 public static void printinc(int num){
 if(num==1){
     System.out.println(1);
@@ -44,5 +44,19 @@ System.out.println(num);
         int n = 5;
     printinc(n);
     }
+}*/
+public class recurssion {
+public static boolean sortedarr(int ar[] , int i){
+    
+if(i==ar.length-1){
+    return true;}
+    if (ar[i]>ar[i+1]){
+        return false;
+    }
+return sortedarr(ar, i+1);
 }
-
+    public static void main(String[] args) {
+        int arr[] = {1,2,3,8,5};
+        System.out.println(sortedarr(arr,0));
+    }
+}
