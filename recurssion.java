@@ -12,7 +12,7 @@ public static int printsum(int n){
 System.out.println( printsum(num));
     }
 }*/
-public class recurssion {
+/*public class recurssion {
 public static int fact(int num){
     if(num==0){
         return 1;
@@ -26,6 +26,21 @@ public static int fact(int num){
     public static void main(String[] args) {
         int n =5;
         System.out.println(fact(n));
+    }
+}*/
+public class recurssion {
+public static void printinc(int num){
+if(num==1){
+    System.out.println(1);
+    return ;
+}
+ printinc(num-1);
 
+System.out.println(num);
+
+}
+    public static void main(String[] args) {
+        int n = 10;
+    printinc(n);
     }
 }
