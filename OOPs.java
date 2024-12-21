@@ -30,7 +30,7 @@
     password="pws";
     }   
     }*/
-    public class OOPs {
+    /*public class OOPs {
     
         public static void main(String[] args) {
             pen p1 = new pen();
@@ -56,7 +56,8 @@
                 void settip(int tip){
                     this.tip=tip;
                 }
-            }
+            }*/
+            
         
     
 
