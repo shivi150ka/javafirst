@@ -41,7 +41,7 @@ System.out.println(num);
 
 }
     public static void main(String[] args) {
-        int n = 10;
+        int n = 5;
     printinc(n);
     }
 }
