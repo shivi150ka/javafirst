@@ -11,6 +11,8 @@ String firstname="Shradha" ;
 String lastname= "Khapra";
 String fullname =firstname+" "+lastname;
 System.out.println(fullname);
+System.out.println(fullname.charAt(0));
+System.out.println(fullname.length());
 
 
         sc.close();
