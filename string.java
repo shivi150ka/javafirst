@@ -6,6 +6,13 @@ public class string {
         String name;
         name = sc.next();
         System.out.println(name);
+String firstname="Shradha" ;
+
+String lastname= "Khapra";
+String fullname =firstname+" "+lastname;
+System.out.println(fullname);
+
+
         sc.close();
     }
 }
