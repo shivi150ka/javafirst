@@ -14,8 +14,8 @@ public class loop{
     }
     for(int i=1;i<=num;i++){
         for(int j=1;j<=i-1;j++)
-        {System.out.print(" ");}
-        for(int k=1;k<=9-2*i;k++){
+        {System.out.print(" ");}   
+        for(int k=num;k<=2*num-i;k--){
             System.out.print("*");
         }
             
