@@ -1,4 +1,4 @@
-public class backtracking {
+/*public class backtracking {
 public static void changearr(int num[], int index,int val){
 if(index==num.length){
     printarr(num);
@@ -20,6 +20,26 @@ public static void printarr(int num[]){
         changearr(arr,0,5);
         printarr(arr);
     }
-}
+}*/
 
     
+public class backtracking {
+public static void findsubsets(String stri,String ans, int i){
+    //base code
+    if (i==stri.length()){
+        if(ans.length()==0){
+            System.out.println("null");}
+            else{
+                System.out.println(ans);}
+                return;
+    }
+            findsubsets(stri, ans+stri.charAt(i), i+1);
+            findsubsets(stri, ans, i+1);
+        }
+    
+
+    public static void main(String[] args) {
+        String str ="abc";
+findsubsets(str,"",0);
+    }
+}
