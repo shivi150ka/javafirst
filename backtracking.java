@@ -39,7 +39,7 @@ public static void findsubsets(String stri,String ans, int i){
     
 
     public static void main(String[] args) {
-        String str ="abc";
+        String str ="abcd";
 findsubsets(str,"",0);
     }
 }
