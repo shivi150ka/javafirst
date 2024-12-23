@@ -58,7 +58,7 @@ public static void findprmu(String str,String ans){
 
     public static void main(String[] args) {
 
-        String stri="abc";
+        String stri="ab";
         findprmu(stri,"");
     }
 }
