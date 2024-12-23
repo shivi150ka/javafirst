@@ -23,7 +23,7 @@ public static void printarr(int num[]){
 }*/
 
     
-public class backtracking {
+/*public class backtracking {
 public static void findsubsets(String stri,String ans, int i){
     //base code
     if (i==stri.length()){
@@ -41,5 +41,24 @@ public static void findsubsets(String stri,String ans, int i){
     public static void main(String[] args) {
         String str ="abcd";
 findsubsets(str,"",0);
+    }
+}*/
+public class backtracking {
+public static void findprmu(String str,String ans){
+    if(str.length()==0){
+        System.out.println(ans);
+        return;}
+        for(int i=0;i<str.length();i++){
+            char curr=str.charAt(i);
+            String newstr=str.substring(0,i)+str.substring(i+1);
+            findprmu(newstr,ans+curr);
+        }
+    }
+
+
+    public static void main(String[] args) {
+
+        String stri="abc";
+        findprmu(stri,"");
     }
 }
