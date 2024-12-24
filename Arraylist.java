@@ -13,6 +13,13 @@ sc.(list.add(i));*/
         list.add(5);
    for(int j=0;j<=list.size()-1;j++){
         System.out.println("Enter your number ="+list.get(j));
-            }
+            }list.remove(2);
+            for(int j=0;j<=list.size()-1;j++){
+                System.out.println("Enter your number ="+list.get(j));
+                    }
+                    list.set(2, 6);
+                    for(int j=0;j<=list.size()-1;j++){
+                        System.out.println("Enter your number ="+list.get(j));
+                            }
 }
 }
