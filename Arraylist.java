@@ -25,9 +25,9 @@ sc.(list.add(i));*/
 }*/
 import java.util.*;
 public class Arraylist {
-    public static void reverse (ArrayList<Integer> limb ){
-        for(int i=limb.size()-1;i>=0;i--){
-            System.out.print(limb.get(i)+" ");
+    public static void reverse (ArrayList<Integer> limf ){
+        for(int i=limf.size()-1;i>=0;i--){
+            System.out.print(limf.get(i)+" ");
         }
 System.out.println();
     }
@@ -56,7 +56,7 @@ public static void main(String[] args) {
     reverse(list);
     maxnum(list);
     System.out.println(list);
-    int idx=2,idx3=4;
+    int idx=1,idx3=0;
     swap(list, idx, idx3);
 }
     
