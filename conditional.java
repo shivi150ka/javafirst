@@ -125,7 +125,7 @@ public class conditional {
 sc.close();
     }
 }*/
-import java.util.*;
+/*import java.util.*;
 public class conditional {
 
     public static void main(String[] args) {
@@ -138,5 +138,40 @@ else{
     System.out.println("your number is negative");
 }
 sc.close();
+    }
+}*/
+import java.util.*;
+public class conditional {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int Day = sc.nextInt();
+        switch (Day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+                case 2:
+                System.out.println("Monday");
+                break;
+                case 3:
+                System.out.println("Tuesday");
+                break;
+                case 4:
+                System.out.println("Wednesday");
+                break;
+                case 5:
+                System.out.println("Friday");
+                break;
+                case 6:
+                System.out.println("Saturday");
+                break;
+                case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+            System.out.println("INVALID");
+                break;
+        }
+        sc.close();
     }
 }
