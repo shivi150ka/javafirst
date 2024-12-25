@@ -91,7 +91,7 @@ public class conditional {
 
 //why do not run the code using nextLine
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class conditional {
 
     public static void main(String[] args) {
@@ -122,6 +122,21 @@ public class conditional {
             System.out.println("You have entered an wrong operator");
                 break;
         }
+sc.close();
+    }
+}*/
+import java.util.*;
+public class conditional {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a>0){
+            System.out.println("your number is positive");
+        }
+else{
+    System.out.println("your number is negative");
+}
 sc.close();
     }
 }
