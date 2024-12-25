@@ -31,6 +31,15 @@ public class Arraylist {
         }
 System.out.println();
     }
+    public static void maxnum(ArrayList<Integer> lift){
+        int max=Integer.MIN_VALUE;
+        for(int i=0;i<lift.size();i++){
+            if(max<lift.get(i)){
+                max=lift.get(i);
+            }
+        }
+        System.out.println("max element="+max);
+    }
 public static void main(String[] args) {
     ArrayList<Integer> list = new ArrayList<>();
     list.add(5);
@@ -39,6 +48,7 @@ public static void main(String[] args) {
     list.add(9);
     list.add(8);
     reverse(list);
+    maxnum(list);
 }
     
 }
