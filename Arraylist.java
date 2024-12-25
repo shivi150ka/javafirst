@@ -40,6 +40,12 @@ System.out.println();
         }
         System.out.println("max element="+max);
     }
+    public static void swap(ArrayList<Integer> life , int indx1,int indx2){
+int temp= life.get(indx1);
+life.set(indx1, life.get(indx2));
+life.set(indx2, temp);
+System.out.println(life);
+    }
 public static void main(String[] args) {
     ArrayList<Integer> list = new ArrayList<>();
     list.add(8);
@@ -49,6 +55,9 @@ public static void main(String[] args) {
     list.add(5);
     reverse(list);
     maxnum(list);
+    System.out.println(list);
+    int idx=2,idx3=4;
+    swap(list, idx, idx3);
 }
     
 }
