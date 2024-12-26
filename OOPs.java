@@ -57,7 +57,74 @@
                     this.tip=tip;
                 }
             }*/
+         /*   public class OOPs {
+            public static void main(String[] args) {
+                
             
-        
-    
+           Bankaccount p1 = new Bankaccount();
+         p1.setaccount(4851);
+            System.out.println(p1.Account_Number);
 
+            p1.setpassword('a');
+System.out.println(p1.Password);
+           } }
+        class Bankaccount{
+            int Account_Number;
+            char Password;
+void setaccount(int num){
+    Account_Number= num;
+}
+void setpassword(char newpass){
+    Password= newpass;
+}
+        }*/
+      /* *  public class OOPs {
+        public static void main(String[] args) {
+            jacket j1 = new jacket();
+            j1.color="pink";
+            j1.numofpacket=50;
+            System.out.println(j1.color);
+            System.out.println(j1.numofpacket);
+            j1.setpacket(55);
+            j1.setcolour("Blue");
+            System.out.println(j1.color);
+            System.out.println(j1.numofpacket);
+        }
+            
+        }
+    class jacket{
+        int numofpacket;
+String color;
+void setpacket(int number){
+    numofpacket=number;
+}
+void setcolour( String newcolour){
+    color= newcolour;
+}
+    }*/
+    public class OOPs {
+    
+        public static void main(String[] args) {
+            blanket b1= new blanket();
+            b1.setcolor("blue");
+            System.out.println(b1.getcolor());
+             
+        }
+    }
+
+class blanket{
+    String color;
+    int thickness;
+    String getcolor(){
+        return this.color;
+    }
+    int getthickness(){
+        return this.thickness;
+    }
+void setcolor(String newcolor){
+    this.color=newcolor;
+}
+void setthickness(int newvalue){
+    this.thickness=newvalue;
+}
+}
