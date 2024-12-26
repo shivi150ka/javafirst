@@ -113,8 +113,8 @@ void setcolour( String newcolour){
     }
 
 class blanket{
-    String color;
-    int thickness;
+   private String color;
+  private  int thickness;
     String getcolor(){
         return this.color;
     }
