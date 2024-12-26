@@ -102,7 +102,7 @@ void setcolour( String newcolour){
     color= newcolour;
 }
     }*/
-    public class OOPs {
+   /* * public class OOPs {
     
         public static void main(String[] args) {
             blanket b1= new blanket();
@@ -127,4 +127,27 @@ void setcolor(String newcolor){
 void setthickness(int newvalue){
     this.thickness=newvalue;
 }
+}*/
+public class OOPs {
+public static void main(String[] args) {
+    bankaccount b1 = new bankaccount();
+    b1.Account_Number=155221553;
+System.out.println(b1.Account_Number);
+b1.setpassword("abcdsw");
+System.out.println(b1.getpassword());
+}
+    
+}
+class bankaccount{
+    long Account_Number;
+    private String password;
+    void setaccount(long num){
+        this.Account_Number=num;
+    }
+    String getpassword(){
+        return this.password;
+    }
+    void setpassword(String newpass){
+        this.password=newpass;
+    }
 }
