@@ -130,20 +130,26 @@ void setthickness(int newvalue){
 }*/
 public class OOPs {
 public static void main(String[] args) {
-    bankaccount b1 = new bankaccount();
+    bankaccount b1 = new bankaccount( 85412441);
     b1.Account_Number=155221553;
 System.out.println(b1.Account_Number);
 b1.setpassword("abcdsw");
 System.out.println(b1.getpassword());
+bankaccount b2 = new bankaccount(45621446);
+b2.Account_Number=1247114;
+System.out.println(b2.Account_Number);
 }
     
 }
 class bankaccount{
     long Account_Number;
     private String password;
-    void setaccount(long num){
-        this.Account_Number=num;
+    bankaccount(long pass){
+        System.out.println("constructor is called");
     }
+  /* * void setaccount(long num){
+        this.Account_Number=num;
+    }*/
     String getpassword(){
         return this.password;
     }
