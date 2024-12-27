@@ -22,7 +22,9 @@ public class Linkedlist {
     }
 
 public static void main(String[] args) {
-    
+    Linkedlist ll = new linkedlist();
+    ll.add(1);
+    ll.add(2);
 }
 
 
