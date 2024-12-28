@@ -27,7 +27,7 @@ public static void main(String[] args) {
 }
 }*/
 // conversion of binary to decimal
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class functions {
 public static void conversion (int a) {
     int n=a;
@@ -49,6 +49,29 @@ public static void conversion (int a) {
         int num = sc.nextInt();
         System.out.println("your number =" + num);
          conversion(num);
+        sc.close();
+
+    }
+}*/
+import java.util.*;
+public class functions {
+public static boolean isPrime(int num){
+if (num==2) {
+    return true;   
+}
+for(int i=2;i<num-1;i++){
+    if(num%i==0){
+        return false;
+    }
+
+}
+return true;
+}
+    public static void main(String[] args) {
+        Scanner sc   = new   Scanner(System.in);
+        int n= sc.nextInt();
+        System.out.println(isPrime(n));
+
         sc.close();
 
     }
