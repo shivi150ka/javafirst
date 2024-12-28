@@ -77,8 +77,7 @@ return true;
         sc.close();
 
     }
-}*/
-import java.util.*;
+}*//*import java.util.*;
 public class functions {
     public static void printstar(int num){
         for(int i =1;i<=num;i++){
@@ -100,6 +99,29 @@ public static void main(String[] args) {
     sc.close();
 }
     
+}*/
+import java.util.*;
+public class functions {
+public static void loop(int n){
+   
+    for (int i=1;i<=n;i++){
+        int c=0;
+        for( int j=n;j>=i;j--){
+            
+            c++;
+            System.out.print(c);
+           
+        }
+
+        System.out.println();
+    }
+}
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        loop(num);
+        sc.close();
+    }
 }
 
 
