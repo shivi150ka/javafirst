@@ -30,7 +30,7 @@ public static int largest(int num[]){
 sc.close();
     }
 }*/
-public class arrays {
+/*public class arrays {
 public static int binearysearch(int num[],int sea){
      int start=0,end=num.length-1;
     System.out.println(num.length);
@@ -55,5 +55,28 @@ start=mid+1;
         int key =1;
         System.out.println(arr.length);
       System.out.println( "index is "+binearysearch(arr,key));   
+    }
+}*/
+public class arrays {
+public static void reverse(int num[]){
+    int first=0,last=num.length-1;
+    while (first<last) {
+        int temp = num[first];
+       num [first]= num[last];
+       num[last] = temp;
+        first++;last--;
+    }
+    printarr(num);
+}
+public static void printarr(int array[]){
+    for(int i=0;i<array.length;i++){
+        System.out.print(array[i]);
+    }
+    System.out.println();
+}
+    public static void main(String[] args) {
+        int arr[]={5,9,2,4,7,8};
+        printarr(arr);
+        reverse(arr);
     }
 }
