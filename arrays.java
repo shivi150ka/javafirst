@@ -57,7 +57,7 @@ start=mid+1;
       System.out.println( "index is "+binearysearch(arr,key));   
     }
 }*/
-public class arrays {
+/*public class arrays {
 public static void reverse(int num[]){
     int first=0,last=num.length-1;
     while (first<last) {
@@ -78,5 +78,25 @@ public static void printarr(int array[]){
         int arr[]={5,9,2,4,7,8};
         printarr(arr);
         reverse(arr);
+    }
+}*/
+public class arrays {
+public static void subarrays(int num[]){
+    for(int i=0; i<num.length ;i++){
+        int start=i;
+for(int j=1;j<num.length;j++){
+    int end=j;
+for (int k=start;k<=end;k++){
+    System.out.print(k);
+    System.out.print(num[k]);
+}
+System.out.println();
+}
+;
+    }
+}
+    public static void main(String[] args) {
+        int arr[]={5,8,6,7,9,};
+        subarrays(arr);
     }
 }
