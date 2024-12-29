@@ -80,7 +80,7 @@ public static void printarr(int array[]){
         reverse(arr);
     }
 }*/
-public class arrays {
+/*public class arrays {
 public static void subarrays(int num[]){
     for(int i=0; i<num.length ;i++){
         int start=i;
@@ -98,5 +98,21 @@ System.out.println();
     public static void main(String[] args) {
         int arr[]={9,5,4,6,3,4,1};
         subarrays(arr);
+    }
+}*/
+public class arrays {
+public static void pairs(int num[]){
+for(int i=0;i<num.length;i++){
+    for(int j=i+1;j<num.length;j++){
+        System.out.print("("+num[i]+","+num[j]+")");
+    }
+    System.out.println();
+}
+System.out.println();
+}
+    public static void main(String[] args) {
+        int arr[]={1,5,6,8,9};
+        pairs(arr);
+        
     }
 }
