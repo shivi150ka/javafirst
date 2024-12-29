@@ -9,7 +9,7 @@ public class arrays {
 sc.close();
     }
 }*/
-import java.util.*;
+/*import java.util.*;
 public class arrays {
 public static int largest(int num[]){
     int largest =Integer.MIN_VALUE;
@@ -28,5 +28,32 @@ public static int largest(int num[]){
         }
       System.out.println("largest number is "+ largest(arr)); 
 sc.close();
+    }
+}*/
+public class arrays {
+public static int binearysearch(int num[],int sea){
+     int start=0,end=num.length-1;
+    System.out.println(num.length);
+     while(start<=end){
+        int mid=(start+end)/2;
+        if(sea==num[mid]){
+            return mid;
+        }
+        if(sea>num[mid]){
+start=mid+1;
+
+        }
+        else{
+            end=mid-1;
+        }
+      
+     }
+     return -1;
+}
+    public static void main(String[] args) {
+        int arr[]={1,2,3,5,6};
+        int key =1;
+        System.out.println(arr.length);
+      System.out.println( "index is "+binearysearch(arr,key));   
     }
 }
