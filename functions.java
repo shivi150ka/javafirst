@@ -100,7 +100,7 @@ public static void main(String[] args) {
 }
     
 }*/
-import java.util.*;
+/*import java.util.*;
 public class functions {
 public static void loop(int n){
    
@@ -122,7 +122,7 @@ public static void loop(int n){
         loop(num);
         sc.close();
     }
-}
+}*/
 
 
 
