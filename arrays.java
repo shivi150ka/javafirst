@@ -96,7 +96,7 @@ System.out.println();
     }
 }
     public static void main(String[] args) {
-        int arr[]={5,8,6,7,9,};
+        int arr[]={9,5,4,6,3,4,1};
         subarrays(arr);
     }
 }
