@@ -116,7 +116,7 @@ System.out.println();
         
     }
 }*/
-public class arrays {
+/*public class arrays {
 public static void darray(int num[][]){
     int sum=0;
     for(int i=0;i<num.length;i++){
@@ -135,4 +135,25 @@ public static void darray(int num[][]){
     }};
     darray(arr);
     }
+}*/
+import java.util.*;
+public class arrays {
+
+    public static void main(String[] args) {
+        int arr[][]=new int[3][3];
+        Scanner sc=new Scanner(System.in);
+for(int i=0;i<arr.length;i++){
+    for(int j=0;j<arr[0].length;j++){
+        arr[i][j]=sc.nextInt();
+    }
+}
+for(int k=0;k<arr.length;k++){
+    for(int l=0;l<arr[0].length;l++){
+        System.err.print(arr[k][l]);
+    }
+    System.out.println();
+}
+sc.close();
+    }
+
 }
