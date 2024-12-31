@@ -136,7 +136,7 @@ public static void darray(int num[][]){
     darray(arr);
     }
 }*/
-import java.util.*;
+/*import java.util.*;
 public class arrays {
 
     public static void main(String[] args) {
@@ -156,4 +156,4 @@ for(int k=0;k<arr.length;k++){
 sc.close();
     }
 
-}
+}*/
