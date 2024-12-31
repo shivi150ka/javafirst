@@ -1,4 +1,4 @@
-public class divideconquer {
+/*public class divideconquer {
 public static void quicksort(int arr[],int si,int ei){
     if(si>=ei){
         return;
@@ -36,5 +36,31 @@ public static void quicksort(int arr[],int si,int ei){
         int arr[]={8,9,7,6,5,3,9};
         quicksort(arr,0,arr.length-1);
         printarr(arr);
+    }
+}*/
+public class divideconquer {
+public static void mergesort(int arr[],int si, int mid, int ei){
+    int temp[]=new int[ei-si-1];
+    int i=si;
+    int j= mid+1;
+    int k=0;
+    while (i<=mid&&j<=ei) {
+        if (arr[i]<arr[j]) {
+            temp[k]=arr[i];
+            i++;
+        }
+       else{
+        temp[k]=arr[j];
+        j++;
+       } 
+       k++;
+    }
+    while (i<=mid) {
+        temp[k++]=arr[i++];
+    }
+    
+}
+    public static void main(String[] args) {
+        
     }
 }
