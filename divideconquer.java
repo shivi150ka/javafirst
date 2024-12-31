@@ -33,7 +33,7 @@ public static void quicksort(int arr[],int si,int ei){
  }
 
     public static void main(String[] args) {
-        int arr[]={5,1,8,9,6};
+        int arr[]={8,9,7,6,5,3,9};
         quicksort(arr,0,arr.length-1);
         printarr(arr);
     }
