@@ -9,11 +9,11 @@ public class binarytree {
             this.right=null;
         }
     }
-    static class binarytree{
+    static class binary{
         static int idx=-1;
-        public static node buildtree(int nodes[]){
+        public  node buildtree(int nodes[]){
             idx++;
-            if(nodes[idx]==-1){
+            if(nodes[idx]==1){
                 return null;
             }
             node newnode=new node(nodes[idx]);
@@ -24,7 +24,7 @@ public class binarytree {
     }
     public static void main(String[] args) {
         int nodes[]={1,2,4,-1,-1,5,-1,-1,3,-1,6};
-        binarytree tree=new binarytree();
+        binary tree=new binary();
         node root=tree.buildtree(nodes);
         System.out.println(root.data);
     }
