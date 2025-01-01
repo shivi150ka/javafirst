@@ -9,6 +9,16 @@ public class binarytree {
             this.right=null;
         }
     }
+    public static void preorder(node root){
+        if(root==null){
+            return;
+        }
+        System.out.println(root.data+"");
+        preorder(root.left);
+        preorder(root.right);
+        
+    }
+    
     static class binary{
         static int idx=-1;
         public  node buildtree(int nodes[]){
