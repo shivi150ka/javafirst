@@ -19,6 +19,17 @@ public class binarytree {
         
     }
     
+public static void inorder(node root){
+    if(root==null){
+        return;
+    }
+    inorder(root.left);
+    System.out.println(root.data+"");
+    inorder(root.right);
+}
+
+
+
     static class binary{
         static int idx=-1;
         public  node buildtree(int nodes[]){
@@ -37,5 +48,7 @@ public class binarytree {
         binary tree=new binary();
         node root=tree.buildtree(nodes);
         System.out.println(root.data);
+        preorder(root);
+        inorder(root);
     }
 }
