@@ -27,7 +27,14 @@ public static void inorder(node root){
     System.out.println(root.data+"");
     inorder(root.right);
 }
-
+public static void postorder(node root){
+    if(root==null){
+        return;
+    }
+    postorder(root.left);
+    postorder(root.right);
+    System.out.println(root.data+"");
+}
 
 
     static class binary{
@@ -50,5 +57,6 @@ public static void inorder(node root){
         System.out.println(root.data);
         preorder(root);
         inorder(root);
+        postorder(root);
     }
 }
