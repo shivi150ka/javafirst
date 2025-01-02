@@ -20,7 +20,7 @@ for(int i =0;i<fullname.length();i++){
         sc.close();
     }
 }*/
-public class string {
+/*public class string {
 public static String toUpperCase(String str){
     StringBuilder sb = new StringBuilder("");
     char ch=Character.toUpperCase(str.charAt(0));
@@ -40,5 +40,15 @@ public static String toUpperCase(String str){
     public static void main(String[] args) {
         String str="Hello world";
        System.out.println(toUpperCase(str)); 
+    }
+}*/
+public class string {
+
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder(" ");
+for(char ch ='a';ch<='z';ch++){
+    sb.append(ch);
+}
+//System.out.println(sb.length());
     }
 }
