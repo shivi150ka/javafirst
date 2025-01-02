@@ -58,5 +58,6 @@ public static void postorder(node root){
         preorder(root);
         inorder(root);
         postorder(root);
+        System.out.println(root.data);
     }
 }
