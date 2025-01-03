@@ -19,16 +19,30 @@ rear=-1;
             rear=rear+1;
             arr[rear]=data;
         }
+        public static int remove(){
+            if(isEmpty()){
+                System.out.println("empty queue");
+                return -1;
+            }
+            int front=arr[0];
+            for(int i=0;i<rear;i++){
+                arr[i]=arr[i+1];
+            }
+            rear=rear-1;
+return front;
+        }
     }
      public static void main(String[] args) {
         queu q= new queu(4);
-       System.out.print(q.add(1));
-      /*   q.add(2);
+       //System.out.print(q.add(1));
+         q.add(2);
         q.add(3);
-        q.add(4);*/
-        System.out.print(q.add(2));
+        q.add(4);
+      /*  System.out.print(q.add(2));
         System.out.println(q.add(3));
-        System.out.println(q.add(4));
-
+        System.out.println(q.add(4));*/
+while (! q.isEmpty()) {
+    q.remove();
+}
      }
 }
