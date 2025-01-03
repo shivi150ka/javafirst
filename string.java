@@ -42,7 +42,7 @@ public static String toUpperCase(String str){
        System.out.println(toUpperCase(str)); 
     }
 }*/
-public class string {
+/*public class string {
 
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder(" ");
@@ -50,5 +50,12 @@ for(char ch ='a';ch<='z';ch++){
     sb.append(ch);
 }
 //System.out.println(sb.length());
+    }
+}*/
+public class string {
+
+    public static void main(String[] args) {
+        String substr=" ";
+        for(int i)
     }
 }
