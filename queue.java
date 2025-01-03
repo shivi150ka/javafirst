@@ -55,7 +55,7 @@ while (! q.isEmpty()) {
      }
 }*/
 
-public class queue {
+/*public class queue {
 
     static class Node{
         int data;
@@ -84,4 +84,4 @@ public class queue {
         tail=newNode;
         tail=newNode;
     }
-}
+}*/
