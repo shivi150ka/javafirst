@@ -5,8 +5,8 @@ public class queue {
         static int rear;
         queu(int n){
             arr = new int [n];
-size=n;
-rear=-1;
+            size=n;
+            rear=-1;
         }
         public static boolean isEmpty(){
             return rear==-1;
@@ -29,7 +29,14 @@ rear=-1;
                 arr[i]=arr[i+1];
             }
             rear=rear-1;
-return front;
+            return front;
+        }
+        public static int peek(){
+            if(isEmpty()){
+                System.out.println("empty queue");
+                return -1;
+            }
+            return arr[0];
         }
     }
      public static void main(String[] args) {
@@ -42,6 +49,7 @@ return front;
         System.out.println(q.add(3));
         System.out.println(q.add(4));*/
 while (! q.isEmpty()) {
+    System.out.println(q.peek());
     q.remove();
 }
      }
