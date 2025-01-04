@@ -87,7 +87,7 @@ public static void printarr(int arr[]){
     }
 }*/
 //bubble sort
-public class sorting {
+/*public class sorting {
 public static void bubblesort(int num[]){
     for(int i=0;i<num.length-1;i++){
         for(int j=0;j<num.length-1-i;j++){
@@ -107,6 +107,31 @@ public static void printarr(int nums[]){
     public static void main(String[] args) {
         int arr[]={9,5,7,6,2,8};
         bubblesort(arr);
+        printarr(arr);
+    }
+}*/
+public class sorting {
+public static void selectionsort(int num[]){
+    for(int i=0;i<num.length-1;i++){
+        int n=i;
+for(int j=i;j<num.length-1;j++){
+    if(num[n]>num[j]){
+        n=j;
+    }
+    int temp=num[n];
+    num[n]=num[i];
+    num[i]=temp;
+}
+    }
+}
+    public static void printarr(int nums[]){
+        for(int i=0;i<nums.length;i++){
+            System.out.print(nums[i]+"");
+        }
+    }
+    public static void main(String[] args) {
+        int arr[]={4,9,5,1,7};
+        selectionsort(arr);
         printarr(arr);
     }
 }

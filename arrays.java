@@ -157,3 +157,16 @@ sc.close();
     }
 
 }*/
+public class arrays {
+
+    public static void main(String[] args) {
+        int num[]={8,9,7,5,4,1,6};
+        int max=Integer.MAX_VALUE;
+        for(int i=0;i<num.length;i++){
+            if(max<num[i]){
+                System.out.println("the smallest element is"+num[i]);
+            }
+        }
+
+    }
+}
