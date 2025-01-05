@@ -86,7 +86,7 @@ while (! q.isEmpty()) {
     }
 }*/
 
-import java.util.LinkedList;
+/*import java.util.LinkedList;
 import java.util.Queue;
 public class queue {
 public static void interleave(Queue<Integer> q){
@@ -112,4 +112,31 @@ public static void main(String[] args)  {
     }
     System.out.println();
 }
+}*/
+import java.util.LinkedList;
+import java.util.Queue;
+public class queue {
+public static void printnonrepeating(String st){
+    int freq[]=new int[26];
+    Queue<Character> q=new LinkedList<>();
+    for(int i=0;i<st.length();i++){
+        char ch=st.charAt(i);
+        q.add(ch);
+        freq[ch-'a']++;
+        while (!q.isEmpty()&&freq[q.peek()-'a']>1) {
+            q.remove();
+        }
+        if(q.isEmpty()){
+            System.out.print(-1+" ");
+        }
+        else{
+            System.out.print(q.peek()+" ");
+        }
+        System.out.println();
+    }
+}
+    public static void main(String[] args) {
+        String str="aabccxb";
+        printnonrepeating(str);
+    }
 }
