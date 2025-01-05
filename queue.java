@@ -136,7 +136,7 @@ public static void printnonrepeating(String st){
     }
 }
     public static void main(String[] args) {
-        String str="aabccxb";
+        String str="uyrsyrtp";
         printnonrepeating(str);
     }
 }
