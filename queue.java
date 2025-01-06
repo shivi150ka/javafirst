@@ -175,10 +175,10 @@ public class queue {
 public static void main(String[] args) {
     queue q= new queue();
     q.add(1);
-    q.add(2);
+    q.add(9);
     q.add(3);
-    q.add(4);
-    q.add(5);
+    q.add(8);
+    q.add(7);
     System.out.println("peek"+q.peek());
     System.out.println("peek"+q.remove());
     System.out.println("peek"+q.remove());
