@@ -140,9 +140,9 @@ public static void printnonrepeating(String st){
         printnonrepeating(str);
     }
 }*/
-//Implemenyt stack using Deque
+//Implement stack using Deque
 
-import java.util.Deque;
+/*import java.util.Deque;
 import java.util.LinkedList;
 public class queue {
  public static void main(String[] args) {
@@ -168,4 +168,21 @@ public void push(int data){
   public int peek(){
     return deque.getLast();
   }
+}*/
+//implement queue using deque
+import java.util.*;
+public class queue {
+public static void main(String[] args) {
+    queue q= new queue();
+    q.add(1);
+    q.add(2);
+    q.add(3);
+    q.add(4);
+    q.add(5);
+    System.out.println("peek"+q.peek());
+    System.out.println("peek"+q.remove());
+    System.out.println("peek"+q.remove());
+    System.out.println("peek"+q.remove());
+}
+    
 }
