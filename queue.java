@@ -179,6 +179,7 @@ public static void main(String[] args) {
     q.add(3);
     q.add(4);
     q.add(5);
+    q.clone()
     System.out.println("peek"+q.peek());
     System.out.println("peek"+q.remove());
     System.out.println("peek"+q.remove());
