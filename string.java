@@ -60,10 +60,10 @@ public class string {
         for(int i=0;i<substr.length()/2;i++){
             int j=0,k=substr.length();
             if(substr.charAt(j)==substr.charAt(k)){
-                System.out.println("the given string is palindrome");
+                System.out.println("the given string is a palindrome");
             }
             j++;k--;
         }
-        System.out.println("not palindrome");
+        System.out.println("not a palindrome");
     }
 }
