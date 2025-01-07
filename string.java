@@ -55,7 +55,8 @@ for(char ch ='a';ch<='z';ch++){
 public class string {
 
     public static void main(String[] args) {
-        String substr="abccba ";
+        String substr="abccba";
+        System.out.println(substr.length());
         for(int i=0;i<substr.length()/2;i++){
             int j=0,k=substr.length();
             if(substr.charAt(j)==substr.charAt(k)){
