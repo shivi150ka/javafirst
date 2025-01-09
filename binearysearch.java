@@ -20,12 +20,31 @@ public class binearysearch {
         }
 return root;
     }
+    public static boolean search(node root,int key){
+        if(root==null){
+            return false;
+        }
+        if(root.data==key){
+            return true;
+        }
+        if(root.data>key){
+            return search(root.left, key);
+        }
+        else{
+            return search(root.right, key);
+        }
+    }
     public static void main(String[] args) {
         int value[]={5,2,7,4,9,3,6};
         node root=null;
         for(int i=0;i<value.length;i++){
             root=insert(root, value[i]);
         }
-
+if(search(root, 9)){
+    System.out.println("found");
+}
+else{
+    System.out.println("not found");
+}
     }
 }
