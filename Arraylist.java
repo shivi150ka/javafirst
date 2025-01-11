@@ -23,7 +23,7 @@ sc.(list.add(i));*/
                             }
 }
 }*/
-import java.util.*;
+/*import java.util.*;
 public class Arraylist {
     public static void reverse (ArrayList<Integer> limf ){
         for(int i=limf.size()-1;i>=0;i--){
@@ -60,4 +60,10 @@ public static void main(String[] args) {
     swap(list, idx, idx3);
 }
     
+}*/
+import java.util.*;
+public class Arraylist {
+
+    ArrayList<Integer> list=new ArrayList<>();
+    list.add(1)
 }

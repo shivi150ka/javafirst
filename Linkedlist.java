@@ -1,4 +1,4 @@
-public class Linkedlist {
+/*public class Linkedlist {
     class node{
         int data; 
         node next;
@@ -26,7 +26,5 @@ public static void main(String[] args) {
     ll.addfirst(1);
     ll.addfirst(2);
 }
+}*/
 
-
-
-}

@@ -34,13 +34,16 @@ return root;
             return search(root.right, key);
         }
     }
+public static node delete(node root,int val){
+    if(root.data<)
+}
     public static void main(String[] args) {
         int value[]={5,2,7,4,9,3,6};
         node root=null;
         for(int i=0;i<value.length;i++){
             root=insert(root, value[i]);
         }
-if(search(root, 9)){
+if(search(root, 3)){
     System.out.println("found");
 }
 else{
