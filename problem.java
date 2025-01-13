@@ -17,17 +17,24 @@ sc.close();
 }*/
 public class problem {
 public static boolean check(int num[]){
+    boolean flag=false;
     for(int i=0;i<num.length;i++){
         for(int j=1;j<num.length;j++){
             if(num[i]==num[j]){
-                return true;
+                flag= true;
+            break;
+            }
+            else{
+                flag= false;
             }
         }
     }
+    return flag;
 }
     public static void main(String[] args) {
-        int arr[]={5,6,3,2};
+        int arr[]={5,6,6,2};
        boolean ans=check(arr);
+       System.out.println(ans);
     }
 }
     
