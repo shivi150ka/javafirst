@@ -18,21 +18,19 @@ sc.close();
 public class problem {
 public static boolean check(int num[]){
     boolean flag=false;
-    for(int i=0;i<num.length;i++){
-        for(int j=1;j<num.length;j++){
+    for(int i=0;i<num.length-1;i++){
+       for(int j=i+1;j<num.length;j++){
             if(num[i]==num[j]){
                 flag= true;
             break;
             }
-            else{
-                flag= false;
-            }
+           
         }
     }
     return flag;
 }
     public static void main(String[] args) {
-        int arr[]={5,6,6,2};
+        int arr[]={5,6,2,2};
        boolean ans=check(arr);
        System.out.println(ans);
     }
