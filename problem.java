@@ -26,17 +26,18 @@ public static boolean check(int num[]){
             }   
         }*/
         int start=i,end=num.length-1;
+        System.out.println(end);
         if(num[start]==num[end]){
         flag=true;
         break;
         
         }
-        end--;
+        
     }
     return flag;
 }
     public static void main(String[] args) {
-        int arr[]={5,6,1,2};
+        int arr[]={5,6,2,2};
        boolean ans=check(arr);
        System.out.println(ans);
     }
