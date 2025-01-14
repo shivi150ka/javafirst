@@ -7,5 +7,10 @@ public class hashmap {
         hm.put("china", 900);
         hm.put("bhutan", 500);
         System.out.println(hm);
+        int population=hm.get("india");
+        System.out.println(population);
+        System.out.println(hm.containsKey("india"));
+        System.out.println(hm.remove("india"));
+        System.out.println(hm);
     }
 }
