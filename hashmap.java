@@ -12,5 +12,8 @@ public class hashmap {
         System.out.println(hm.containsKey("india"));
         System.out.println(hm.remove("india"));
         System.out.println(hm);
+        System.out.println(hm.size());
+        System.out.println(hm.isEmpty());
+       // System.out.println(hm.clear());
     }
 }
