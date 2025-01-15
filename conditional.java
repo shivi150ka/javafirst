@@ -175,3 +175,21 @@ public class conditional {
         sc.close();
     }
 }*/
+import java.util.*;
+public class conditional {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int year=sc.nextInt();
+        System.out.println("enter your year = ");
+        
+        if(year%4==0){
+            if(year%100){
+                
+                System.out.println("not a leap year ");
+            }
+           
+
+        }
+    }
+}
