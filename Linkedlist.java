@@ -47,6 +47,27 @@ public void addfirst(int data){
         head=tail=newNode;
         return;
     }
+    newNode.next=head;
+    head=newNode;
+}
+public void addlast(int data){
+    Node newnNode = new Node(data);
+    size++;
+    if(head==null){
+        head=tail=newnNode;
+        return;
+    }
+    tail.next=newnNode;
+    tail=newnNode;
+    public void print(){
+        Node temp=head;
+        while(temp!==null){
+            Node temp=head;
+            System.out.println(temp.data+"->");
+            temp=temp.next;
+        }
+        System.out.println("null");
+    }
 }
     public static void main(String[] args) {
         
