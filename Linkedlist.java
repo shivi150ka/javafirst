@@ -39,6 +39,15 @@ public Node(int data){
 }
 public static Node head;
 public static Node tail;
+public static int size;
+public void addfirst(int data){
+    Node newNode= new Node(data);
+    size++;
+    if(head==null){
+        head=tail=newNode;
+        return;
+    }
+}
     public static void main(String[] args) {
         
     }
