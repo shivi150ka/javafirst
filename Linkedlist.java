@@ -27,7 +27,7 @@ public static void main(String[] args) {
     ll.addfirst(2);
 }
 }*/
-public class Linkedlist {
+/*public class Linkedlist {
 public static class Node {
 int data;
 Node next;
@@ -72,4 +72,4 @@ public void addlast(int data){
     public static void main(String[] args) {
         
     }
-}
+}*/
