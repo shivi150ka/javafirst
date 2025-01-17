@@ -170,7 +170,7 @@ public void push(int data){
   }
 }*/
 //implement queue using deque
-import java.util.*;
+/*import java.util.*;
 public class queue {
 public static void main(String[] args) {
     Queue <Integer> q=new ArrayDeque<>();
@@ -186,4 +186,23 @@ public static void main(String[] args) {
     System.out.println("peek"+q.remove());
 }
     
+}*/
+
+import java.util.ArrayDeque;
+import java.util.Queue;
+import java.util.Stack;
+
+public class queue {
+static class Queue {
+static Stack <Integer> s1=new Stack<>();
+static Stack <Integer> s2=new Stack<>();
+public static boolean isEmpty(){
+    return s1.isEmpty();
+}
+    
+}
+    public static void main(String[] args) {
+        Queue <Integer> q= new ArrayDeque<>();
+
+    }
 }
