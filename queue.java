@@ -173,7 +173,8 @@ public void push(int data){
 import java.util.*;
 public class queue {
 public static void main(String[] args) {
-    queue q= new queue();
+    Queue <Integer> q=new ArrayDeque<>();
+    
     q.add(1);
     q.add(9);
     q.add(3);
