@@ -45,5 +45,8 @@ public class loop {
         for(int j=0;j<9;j++){
             System.out.println("hello");
         }
+        for(int k=0;k<6;k++){
+            System.out.println("+");
+        }
     }
 }
