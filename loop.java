@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class loop{
    public static void diamondpattern(int num){
     for(int i=1;i<=num;i++){
@@ -35,4 +35,12 @@ public static void main(String[] args) {
     sc.close();
 }
 
+}*/
+public class loop {
+
+    public static void main(String[] args) {
+        for(int i=0;i<5;i++){
+            System.out.println("*");
+        }
+    }
 }
