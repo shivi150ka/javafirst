@@ -116,7 +116,11 @@ public static void merge(int arr[],int st, int end, int mid){
     while (j<=end) {
         temp[k++]=arr[j++];
     }
+    for(k=0;k<arr.length;k++){
+        arr[i]=temp[k];
+    }
 }
+
     public static void main(String[] args) {
         
     }
