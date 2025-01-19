@@ -40,7 +40,7 @@ public static void quicksort(int arr[],int si,int ei){
 }*/
 
 
-public class divideconquer {
+/*public class divideconquer {
 public static void merge(int arr[],int si, int mid, int ei){
     int temp[]=new int[ei-si+1];
     int i=si;
@@ -91,5 +91,25 @@ public static void printarr(int arr[]){
         int arr[]={6,3,9,5,2,8};
         mergesort(arr,0, arr.length-1);
         printarr(arr);
+    }
+}*/
+public class divideconquer {
+public static void merge(int arr[],int st, int end, int mid){
+    int temp[]=new[end-st+1];
+    int i=si;
+    int j=mid+1;
+    int k=0;
+    while (i<=mid && j<=ei) {
+        if (arr[i]<arr[j]) {
+            temp[k]=arr[i];
+            i++;
+        }
+        else{
+            temp[k]=arr[i];
+        }
+    }
+}
+    public static void main(String[] args) {
+        
     }
 }
