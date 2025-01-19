@@ -128,7 +128,7 @@ void setthickness(int newvalue){
     this.thickness=newvalue;
 }
 }*/
-public class OOPs {
+/*public class OOPs {
 public static void main(String[] args) {
     bankaccount b1 = new bankaccount( 85412441);
     b1.Account_Number=155221553;
@@ -150,10 +150,10 @@ class bankaccount{
   /* * void setaccount(long num){
         this.Account_Number=num;
     }*/
-    String getpassword(){
+  /*   String getpassword(){
         return this.password;
     }
     void setpassword(String newpass){
         this.password=newpass;
     }
-}
+}*/
