@@ -94,12 +94,12 @@ public static void printarr(int arr[]){
     }
 }*/
 public class divideconquer {
-public static void merge(int arr[],int st, int end, int mid){
-    int temp[]=new[end-st+1];
+public static void merge(int arr[],int si, int end, int mid){
+    int temp[]=new int[end-si+1];
     int i=si;
     int j=mid+1;
     int k=0;
-    while (i<=mid && j<=ei) {
+    while (i<=mid && j<=end) {
         if (arr[i]<arr[j]) {
             temp[k]=arr[i];
             i++;
@@ -120,7 +120,15 @@ public static void merge(int arr[],int st, int end, int mid){
         arr[i]=temp[k];
     }
 }
-
+public static void mergesort(int arr[],int si,int end){
+    if(si>=end){
+        return ;
+    }
+    int mid=si+(end-si)/2;
+    mergesort(arr, si, mid);
+    mergesort(arr, mid+1, end);
+merge(arr, si, end, mid);
+}
     public static void main(String[] args) {
         
     }
