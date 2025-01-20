@@ -182,6 +182,7 @@ public class conditional {
         Scanner sc= new Scanner(System.in);
         int year=sc.nextInt();
         System.out.println("enter your year = ");
+        System.out.println("how to control your time depends upon uyou");
         
         if(year%4==0){
             if(year%100){
