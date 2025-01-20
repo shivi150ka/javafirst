@@ -187,6 +187,7 @@ public class conditional {
             if(year%100){
                 
                 System.out.println("not a leap year ");
+                System.out.println("i am looser");
             }
            
 
