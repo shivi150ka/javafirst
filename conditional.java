@@ -175,7 +175,7 @@ public class conditional {
         sc.close();
     }
 }*/
-import java.util.*;
+/*import java.util.*;
 public class conditional {
 
     public static void main(String[] args) {
@@ -194,4 +194,12 @@ public class conditional {
 
         }
     }
+}*/
+import java.util.*;
+public class conditional {
+
+    for(int i=0;i<5;i++){
+        System.out.println("person");
+    }
 }
+
