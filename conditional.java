@@ -210,7 +210,24 @@ public class conditional {
         int n=sc.nextInt();
         System.out.println(n);
         sc.close();
-        switch (n) {
+        if(n%4==0){
+            if(n%100==0){
+                if (n%400==0) {
+                    System.out.println("leap year");
+                }
+                else{
+                    System.err.println("not a leap year");
+                }
+            }
+            else{
+                System.out.println("leap year");
+            }
+
+        }
+        else{
+            System.out.println("not a leap year");
+        }
+      /*  switch (n) {
             case 1:
             System.out.println("Monday");
                 break;
@@ -235,7 +252,7 @@ public class conditional {
             default:
             System.out.println("Error");
                 break;
-        }
+        }*/
 
     }
 }
