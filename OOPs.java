@@ -157,4 +157,29 @@ class bankaccount{
         this.password=newpass;
     }
 }*/
-public cl
+class pen {
+    
+    String color;
+    int length;
+
+    
+}
+public class OOPs {
+
+    public static void main(String[] args) {
+        pen p1= new pen();
+        System.out.println(p1.color);
+        System.out.println(p1);
+        pen p2=new pen();
+        p2=p1;
+        System.out.println(p2.color);
+        System.out.println(p2);
+        p1.color= "yellow";
+        System.out.println(p1.color);
+        System.out.println(p1);
+        
+
+
+
+    }
+}
