@@ -110,7 +110,7 @@ public static void printarr(int nums[]){
         printarr(arr);
     }
 }*/
-public class sorting {
+/*public class sorting {
 public static void selectionsort(int num[]){
     for(int i=0;i<num.length-1;i++){
         int n=i;
@@ -133,5 +133,68 @@ for(int j=i;j<num.length-1;j++){
         int arr[]={4,9,5,1,7};
         selectionsort(arr);
         printarr(arr);
+    }
+}*/
+import java.util.*;
+public class sorting {
+    public static void bubblesort(int arr[]){
+        for(int i=0; i<=arr.length-1;i++){
+for(int j=i+1;j<arr.length;j++){
+    if(arr[i]<arr[j]){
+        int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+}
+        }
+    }
+public static void insertionsort(int arr[]){
+for(int i=0;i<arr.length-1;i++){
+    int minpos=i;
+for(int j=i+1;j<arr.length;j++){
+if(arr[minpos]>arr[j]){
+minpos=j;
+}
+}
+int temp=arr[minpos];
+arr[minpos]=arr[i];
+arr[i]=temp;
+}
+
+}
+
+
+public static void countingsort(int arr[]){
+int large=Integer.MIN_VALUE;
+for(int i=0;i<arr.length;i++){
+    large=Math.max(large,arr[i]);
+}
+int count[]=new int[large+1];
+for(int i=0;i<arr.length;i++){
+count[arr[i]]++;
+}
+int j=0;
+for(int i=0;i<count.length;i++){
+    while(count[i]>0){
+        arr[j]=i;
+        j++;
+        count[i]--;
+    }
+}
+}
+
+
+
+    public static void printarr(int arr[]){
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+"");
+        }
+    }
+    public static void main(String[] args) {
+        int arr[]={3,6,2,1,8,7,4,5,3,1};
+       
+       countingsort(arr);
+printarr(arr);
+
     }
 }
