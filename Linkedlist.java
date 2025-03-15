@@ -1,32 +1,47 @@
-/*public class Linkedlist {
-    class node{
-        int data; 
-        node next;
-        public node (int data){
-            this.data=data;
-            this.next=null;
-        }
-    }
-    public static node head;
-    public static node tail;
+public class Linkedlist {
+   
 
     public void addfirst(int data){
         node newnode=new node(data);
+        System.out.println(newnode);
         if (head==null) {
             head=tail=newnode;
+            System.out.println(newnode);
             return;
             
         }
         newnode.next=head;
+        System.out.println(head);
+        System.out.println(newnode.next);
         head= newnode;
+        System.out.println(head);
     }
 
 public static void main(String[] args) {
     Linkedlist ll = new Linkedlist();
+    node n = new node(5);
+    System.out.println(ll);
     ll.addfirst(1);
+    System.out.println(ll);
     ll.addfirst(2);
+    System.out.println(ll);
 }
-}*/
+}
+public class node{
+    int data; 
+    node next;
+    
+    public node (int data){
+        System.out.println(data);
+        this.data=data;
+        System.out.println(this.data);
+        this.next=null;
+        System.out.println(this.next);
+        System.out.println(next);
+    }
+}
+public static node head;
+public static node tail;
 /*public class Linkedlist {
 public static class Node {
 int data;

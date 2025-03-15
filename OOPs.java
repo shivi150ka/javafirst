@@ -160,7 +160,7 @@ class bankaccount{
 class pen {
     
     String color;
-    int length;
+    pen next;
 
     
 }
@@ -170,10 +170,12 @@ public class OOPs {
         pen p1= new pen();
         System.out.println(p1.color);
         System.out.println(p1);
+        System.out.println(p1.next);
         pen p2=new pen();
-        p2=p1;
+        
         System.out.println(p2.color);
         System.out.println(p2);
+        System.out.println(p2.next);
         p1.color= "yellow";
         System.out.println(p1.color);
         System.out.println(p1);

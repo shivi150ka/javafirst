@@ -40,6 +40,8 @@ public static boolean check(int num[]){
         int arr[]={5,6,2,2};
        boolean ans=check(arr);
        System.out.println(ans);
+       int a;
+       System.out.println(a);
     }
 }
     

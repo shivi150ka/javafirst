@@ -52,7 +52,7 @@ for(char ch ='a';ch<='z';ch++){
 //System.out.println(sb.length());
     }
 }*/
-public class string {
+/*public class string {
 
     public static void main(String[] args) {
         String substr="abccba";
@@ -66,4 +66,21 @@ public class string {
         }
         System.out.println("not a palindrome");
     }
+}*/
+/*public class string {
+public static int countlowercase(String str){
+    int count=0;
+    for(int i=0;i<str.length();i++){
+if(str.charAt(i))
+    }
 }
+    public static void main(String[] args) {
+        String str="AbcEGiJklOp";
+    }
+}*/
+public class string
+{public static void main(String[] args) 
+    {String str="ShradhaDidi";
+    String str1="ApnaCollege";
+    String str2="ShradhaDidi";
+    System.out.println(str.equals(str1) +" "+str.equals(str2));}}
