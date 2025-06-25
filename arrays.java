@@ -84,10 +84,10 @@ public static void printarr(int array[]){
 public static void subarrays(int num[]){
     for(int i=0; i<num.length ;i++){
         int start=i;
-for(int j=1;j<num.length;j++){
+for(int j=i;j<num.length;j++){
     int end=j;
 for (int k=start;k<=end;k++){
-    System.out.print(k);
+    
     System.out.print(num[k]);
 }
 System.out.println();
@@ -157,7 +157,7 @@ sc.close();
     }
 
 }*/
-public class arrays {
+/*public class arrays {
 
     public static void main(String[] args) {
         int num[]={8,9,7,5,4,1,6};
@@ -168,5 +168,22 @@ public class arrays {
             }
         }
 
+    }
+}*/
+public class arrays {
+
+    public static void main(String[] args) {
+               int arr[]={9,5,4,6,3,4,1};
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr.length;j++){
+                int sum=0;
+                for(int k=i;k<=j;k++){
+                    System.out.print("summation="+sum=sum+arr[k]);
+                    System.out.print(arr[k]);
+                }
+                System.out.println();
+            }
+            
+        }
     }
 }
