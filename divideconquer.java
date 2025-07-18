@@ -40,7 +40,7 @@ public static void quicksort(int arr[],int si,int ei){
 }*/
 
 
-/*public class divideconquer {
+public class divideconquer {
 public static void merge(int arr[],int si, int mid, int ei){
     int temp[]=new int[ei-si+1];
     int i=si;
@@ -84,7 +84,9 @@ public static void printarr(int arr[]){
     int mid=si+(ei-si)/2;
     System.out.println( "mid"+mid);
     mergesort(arr, si, mid);
+    System.out.println("message1");
     mergesort(arr, mid+1, ei);
+    System.out.println("message2");
     merge(arr, si, mid, ei);
  }
     public static void main(String[] args) {
@@ -92,44 +94,44 @@ public static void printarr(int arr[]){
         mergesort(arr,0, arr.length-1);
         printarr(arr);
     }
-}*/
-public class divideconquer {
-public static void merge(int arr[],int si, int end, int mid){
-    int temp[]=new int[end-si+1];
-    int i=si;
-    int j=mid+1;
-    int k=0;
-    while (i<=mid && j<=end) {
-        if (arr[i]<arr[j]) {
-            temp[k]=arr[i];
-            i++;
-        }
-        else{
-            temp[k]=arr[i];
-            j++;
-        }
-        k++;
-    }
-    while (i<=mid) {
-        temp[k++]=arr[i++];
-    }
-    while (j<=end) {
-        temp[k++]=arr[j++];
-    }
-    for(k=0;k<arr.length;k++){
-        arr[i]=temp[k];
-    }
 }
-public static void mergesort(int arr[],int si,int end){
-    if(si>=end){
-        return ;
-    }
-    int mid=si+(end-si)/2;
-    mergesort(arr, si, mid);
-    mergesort(arr, mid+1, end);
-merge(arr, si, end, mid);
-}
-    public static void main(String[] args) {
+// public class divideconquer {
+// public static void merge(int arr[],int si, int end, int mid){
+//     int temp[]=new int[end-si+1];
+//     int i=si;
+//     int j=mid+1;
+//     int k=0;
+//     while (i<=mid && j<=end) {
+//         if (arr[i]<arr[j]) {
+//             temp[k]=arr[i];
+//             i++;
+//         }
+//         else{
+//             temp[k]=arr[i];
+//             j++;
+//         }
+//         k++;
+//     }
+//     while (i<=mid) {
+//         temp[k++]=arr[i++];
+//     }
+//     while (j<=end) {
+//         temp[k++]=arr[j++];
+//     }
+//     for(k=0;k<arr.length;k++){
+//         arr[i]=temp[k];
+//     }
+// }
+// public static void mergesort(int arr[],int si,int end){
+//     if(si>=end){
+//         return ;
+//     }
+//     int mid=si+(end-si)/2;
+//     mergesort(arr, si, mid);
+//     mergesort(arr, mid+1, end);
+// merge(arr, si, end, mid);
+// }
+//     public static void main(String[] args) {
         
-    }
-}
+//     }
+// }
