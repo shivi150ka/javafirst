@@ -1,47 +1,47 @@
-public class Linkedlist {
+// public class Linkedlist {
    
 
-    public void addfirst(int data){
-        node newnode=new node(data);
-        System.out.println(newnode);
-        if (head==null) {
-            head=tail=newnode;
-            System.out.println(newnode);
-            return;
+//     public void addfirst(int data){
+//         node newnode=new node(data);
+//         System.out.println(newnode);
+//         if (head==null) {
+//             head=tail=newnode;
+//             System.out.println(newnode);
+//             return;
             
-        }
-        newnode.next=head;
-        System.out.println(head);
-        System.out.println(newnode.next);
-        head= newnode;
-        System.out.println(head);
-    }
+//         }
+//         newnode.next=head;
+//         System.out.println(head);
+//         System.out.println(newnode.next);
+//         head= newnode;
+//         System.out.println(head);
+//     }
 
-public static void main(String[] args) {
-    Linkedlist ll = new Linkedlist();
-    node n = new node(5);
-    System.out.println(ll);
-    ll.addfirst(1);
-    System.out.println(ll);
-    ll.addfirst(2);
-    System.out.println(ll);
-}
-}
-public class node{
-    int data; 
-    node next;
+// public static void main(String[] args) {
+//     Linkedlist ll = new Linkedlist();
+//     node n = new node(5);
+//     System.out.println(ll);
+//     ll.addfirst(1);
+//     System.out.println(ll);
+//     ll.addfirst(2);
+//     System.out.println(ll);
+// }
+// }
+// public class node{
+//     int data; 
+//     node next;
     
-    public node (int data){
-        System.out.println(data);
-        this.data=data;
-        System.out.println(this.data);
-        this.next=null;
-        System.out.println(this.next);
-        System.out.println(next);
-    }
-}
-public static node head;
-public static node tail;
+//     public node (int data){
+//         System.out.println(data);
+//         this.data=data;
+//         System.out.println(this.data);
+//         this.next=null;
+//         System.out.println(this.next);
+//         System.out.println(next);
+//     }
+// }
+// public static node head;
+// public static node tail;
 /*public class Linkedlist {
 public static class Node {
 int data;
@@ -88,3 +88,41 @@ public void addlast(int data){
         
     }
 }*/
+public class Linkedlist{
+    public class Node{
+        int data;
+        Node next;
+
+        public static Node(int data){
+            this.data=data;
+            this.next=null;
+        }
+    }
+    public static Node Head;
+    public static Node Tail;
+    public static void addfirst(int data){
+         Node newnode= new Node(data) ;
+         if(Head==null){
+          newnode.next=Head;
+          return;
+         }
+        newnode.next=Head;
+        Head=newnode;
+         public void print(){
+        Node temp=Head;
+        while(temp!==null){
+            Node temp=Head;
+            System.out.println(temp.data+"->");
+            temp=temp.next;
+        }
+        System.out.println("null");
+
+    }
+    public static void main(String[] args) {
+        Linkedlist link= new Linkedlist();
+        addfirst(5);
+        addfirst(8);
+        
+
+    }
+}

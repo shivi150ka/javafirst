@@ -43,22 +43,43 @@ public static void findsubsets(String stri,String ans, int i){
 findsubsets(str,"",0);
     }
 }*/
-public class backtracking {
-public static void findprmu(String str,String ans){
-    if(str.length()==0){
-        System.out.println(ans);
-        return;}
-        for(int i=0;i<str.length();i++){
-            char curr=str.charAt(i);
-            String newstr=str.substring(0,i)+str.substring(i+1);
-            findprmu(newstr,ans+curr);
-        }
+// public class backtracking {
+// public static void findprmu(String str,String ans){
+//     if(str.length()==0){
+//         System.out.println(ans);
+//         return;}
+//         for(int i=0;i<str.length();i++){
+//             char curr=str.charAt(i);
+//             String newstr=str.substring(0,i)+str.substring(i+1);
+//             findprmu(newstr,ans+curr);
+//         }
+//     }
+
+
+//     public static void main(String[] args) {
+
+//         String stri="ab";
+//         findprmu(stri,"");
+//     }
+// }
+import java.util.*;
+public class backtracking{
+public static void findsubset(String st,String abs,int i){
+    if(i==st.length()){
+    
+            System.out.println(abs);
+return;
+        
     }
-
-
+    //yes choice 
+    findsubset(st, abs+st.charAt(i), i+1);
+    //no choice
+    findsubset(st, abs, i+1);
+}
     public static void main(String[] args) {
-
-        String stri="ab";
-        findprmu(stri,"");
+        String str="abc";
+        int i=0;
+        String ans =" ";
+        findsubset(str, ans, 0);
     }
 }

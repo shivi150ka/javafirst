@@ -170,20 +170,28 @@ sc.close();
 
     }
 }*/
+import java.util.*;
 public class arrays {
+public static void removestr(String s){
+    Stack<Character> st =new Stack<>();
+    for(int i=0;i<s.length();i++){
+  char ch= s.charAt(i);
+  if(ch=='0'||ch=='1'||ch=='2'||ch=='3'||ch=='4'||ch=='5'||ch=='6'||ch=='7'||ch=='8'||ch=='9'||ch=='+'||ch=='-'||ch=='*'){
+    st.push(ch);
+  }
+    }
+   ArrayList<Character> list = new ArrayList<>();
 
+while(!st.isEmpty()){
+    list.add(st.pop());
+}
+
+System.out.println(list);  // if you want to see the list
+
+  
+}
     public static void main(String[] args) {
-               int arr[]={9,5,4,6,3,4,1};
-        for(int i=0;i<arr.length;i++){
-            for(int j=0;j<arr.length;j++){
-                int sum=0;
-                for(int k=i;k<=j;k++){
-                    System.out.print("summation="+sum=sum+arr[k]);
-                    System.out.print(arr[k]);
-                }
-                System.out.println();
-            }
-            
-        }
+              String s="29aA+90bcs-78";
+              removestr(s);
     }
 }
